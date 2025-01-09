@@ -1,5 +1,6 @@
 {
-    "code-runner.executorMap": {        
-        "typescript": "cls && npx ts-node --files --transpile-only",
+  // O traspile only faz o código ser compilado com erros, então cuidado.
+    "code-runner.executorMap": {
+        "typescript": "cls && npx ts-node --files",
     }
 }
