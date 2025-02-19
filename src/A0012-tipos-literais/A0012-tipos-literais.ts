@@ -16,6 +16,6 @@ function escolhaACor(cor: 'Vermelho' | 'Amarelo' | 'Azul'): string {
 
 console.log(escolhaACor('Vermelho'));
 
-pessoa.nome = 'João'; // Erro porque o nome é constante
+// pessoa.nome = 'João'; // Erro porque o nome é constante
 
 pessoa.sobrenome = 'Carvalho'; // Sem erro porque o sobrenome não é constante
