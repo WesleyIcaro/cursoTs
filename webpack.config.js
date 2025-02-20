@@ -4,13 +4,16 @@ const path = require('path');
 // eslint-disable-next-line no-undef
 module.exports = {
   mode: 'development',
-  entry: './src/A0018-webpack/index.ts',
+  entry: './src/A0019-exercicio/index.ts',
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
+        options: {
+          configFile: 'tsconfig.frontend.json',
+        },
       },
     ],
   },
@@ -20,7 +23,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     // eslint-disable-next-line no-undef
-    path: path.resolve(__dirname, 'dist', 'assets', 'js'),
+    path: path.resolve(__dirname, 'frontend', 'assets', 'js'),
   },
   devtool: 'source-map',
 };
