@@ -10,7 +10,23 @@
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-console.log('alo');
+console.log('opa');
+const form = document.querySelector('.form');
+const usuarioInput = document.querySelector('.username');
+const spanElement = document.querySelector('.error-message');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    if (usuarioInput.value.length < 3 && usuarioInput.value.length >= 255) {
+        console.log('Valor inválido');
+        spanElement.classList.contains('error-message');
+    }
+    // if (cpf.length !== 14) {
+    //   formErrors = true;
+    //   toast.error('CPF inválido');
+    // }
+    console.log('a');
+});
 
 
 /***/ })
