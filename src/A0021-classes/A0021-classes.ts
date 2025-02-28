@@ -33,4 +33,4 @@ const colaborador3 = new Colaborador('João', 'Miranda');
 empresa1.adicionaColaborador(colaborador1);
 empresa1.adicionaColaborador(colaborador2);
 empresa1.adicionaColaborador(colaborador3);
-console.log(empresa1.mostrarColaboradores());
+empresa1.mostrarColaboradores();
