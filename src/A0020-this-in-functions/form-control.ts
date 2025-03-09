@@ -1,4 +1,4 @@
-import { isEmail } from 'validator';
+import isEmail from 'validator/lib/isEmail';
 
 const SHOW_ERROR_MESSAGES = 'show-error-message';
 

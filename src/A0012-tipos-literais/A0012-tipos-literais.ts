@@ -1,6 +1,6 @@
 let x = 10;
 x = 0b1010;
-const y = 10;
+export const y = 10;
 
 // eslint-disable-next-line prefer-const
 let a = 100 as const;

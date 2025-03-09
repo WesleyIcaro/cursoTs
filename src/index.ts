@@ -1,4 +1,4 @@
-const nome = 'luiz';
+export const nome = 'luiz';
 const sobrenome = 'Otávio';
 
 const obj = { rosto: 'olho' };
