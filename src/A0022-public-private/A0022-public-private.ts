@@ -1,5 +1,5 @@
 export class Empresa {
-  public readonly nome: string; // public é redudante, e não é necessário
+  readonly nome: string; // public é redudante, e não é necessário
   private readonly colaboradores: Colaborador[] = [];
   protected readonly cnpj: string;
 
@@ -21,7 +21,7 @@ export class Empresa {
 
 export class Colaborador {
   constructor(
-    public readonly nome: string, // Essa é a melhor forma de declarar propriedades
+    public readonly nome: string, // Essa é a melhor forma de declarar propriedades, e neste caso o acesso precisa ser especificado, pois não é redundante.
     public readonly sobrenome: string,
   ) {}
 }
