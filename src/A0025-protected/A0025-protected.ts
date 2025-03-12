@@ -1,6 +1,6 @@
 export class Empresa {
   public readonly nome: string; // public é redudante, e não é necessário
-  protected readonly colaboradores: Colaborador[] = [];
+  protected readonly colaboradores: Colaborador[] = []; // Protected é acessível pela classe e pelas classes que herdam
   private readonly cnpj: string;
 
   constructor(nome: string, cnpj: string) {
